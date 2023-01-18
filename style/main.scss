@@ -32,13 +32,17 @@ li {
     list-style: none;
 }
 
-a {
+ a {
     text-decoration: none;
     color: $color_grey;
     font-weight: 700;
     font-size: 14px;
 
 }
+i {
+    cursor: pointer;
+}
+
 .btn {
     padding: 15px 25px;
     color: white;
@@ -54,7 +58,7 @@ a {
 
 .head_container {
     background-color: $bg_color;
-    min-height: 100vh;
+    min-height: 60vh;
     .container {
         header {
             padding-top: 20px;
@@ -158,8 +162,297 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 90px;
+        padding-top: 100px;
+        .packages_main {
+
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            a {
+                display: flex;
+                align-items: center;
+                color: $color_geen;
+                i {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+            hr {
+                width: 100px;
+                height: 7px;
+                background-color: $color_red;
+            }
+        }
+        .teacher_instruction {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            .teacher {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                padding: 35px 40px;
+                box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+                h5 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $color_black;
+                }
+                span {
+                    color: $color_grey;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                hr {
+                    width: 50px;
+                    height: 2px;
+                    background-color: $color_red;
+                    color: #E74040;
+                    border: none;
+                    outline: none;
+                }
+            }
+            .instruction {
+                box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+                padding: 35px 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h5 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $color_black;
+                }
+                span {
+                    color: $color_grey;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                hr {
+                    width: 50px;
+                    height: 2px;
+                    background-color: $color_red;
+                    color: #E74040;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
 
     }
+}
+
+.courses {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        .courses_txt {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            a {
+                color: $color_geen;
+                font-size: 14px;
+            }
+            h2 {
+              font-size: 40px;
+              font-weight: 700;
+              color: $color_black;  
+            }
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                color: $color_grey;  
+            }
+
+        }
+        .courses_about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding-bottom: 100px;
+
+
+            .courses_img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                gap: 30px;
+                img {
+                    border-radius: 50%;
+                }
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $color_grey;  
+                }
+                h6 {
+                    color: $color_black;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                .design {
+                    font-size: 14px;
+                }
+                .ikonka_star {
+                    color: #F3CD03;
+                }
+
+            }
+
+        }
+    }
+
+}
+
+.education {
+    .container {
+        .head_education {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            a {
+                color: $color_geen;
+                font-size: 14px;
+            }
+            h2 {
+              font-size: 40px;
+              font-weight: 700;
+              color: $color_black;  
+            }
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                color: $color_grey;  
+            }
+        }
+        .about_pro {
+            padding-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            .img_pro {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                padding-bottom: 30px;
+
+                border-radius: 20px;
+                gap: 10px;
+                margin-bottom: 100px;
+                box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+                h1 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $color_black;
+                }
+                span {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $color_grey;
+
+                }
+                .ikonka_pro {
+                    display: flex;
+                    gap: 10px;
+                    color: $color_geen;
+                    font-size: 25px;
+                }
+                img {
+                    border-radius: 20px 20px 0 0 ;
+                    margin-bottom: 20px;
+                    width: 230px;
+                    height: 240px;
+                }
+            }
+        }
+
+    }
+}
+.email {
+    min-height: 60vh;
+    background-color: $bg_color;
+    .container {
+        padding-top: 160px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+        a {
+            color: $color_geen;
+            font-size: 14px;
+        }
+        h2 {
+          font-size: 40px;
+          font-weight: 700;
+          color: $color_black;  
+        }
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            color: $color_grey;  
+        }
+        div {
+            margin-top: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 200px;
+
+            input {
+                border: none;
+                outline: none;
+                padding: 15px 20px;
+                border-radius: 5px 0 0 5px ;
+                width: 600px;
+            }
+            button {
+                border-radius: 0 5px 5px 0;
+            }
+        }
+
+
+    }
+}
+
+.footer {
+
+    .container {    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+        div {
+            span {
+                font-size: 14px;
+                font-weight: 700;
+                color: $color_grey;  
+            }
+        }
+        .ikonka_pro {
+            display: flex;
+            gap: 10px;
+            color: $color_geen;
+            font-size: 25px;
+        }
+
+    }
+
+
 }
 
 
@@ -172,7 +465,39 @@ a {
 
 
 
+@media screen and (max-width:1024px) {
+    .packages {
+        .container {
+            flex-direction: column;
+            .packages_main {
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .education {
+        .container {
+            .head_education {
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .about_pro {
 
+                flex-direction: column;
+                .img_pro {
+                    width: 80%;
+                    height: 90%;
+                    img {
+                        width: 100%;
+                        height: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -210,6 +535,28 @@ a {
             }
         }
     }
+    .courses {
+        .container {
+            .courses_txt {
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .courses_about {
+                flex-direction: column;
+
+            }
+        }
+    }
+    .email {
+        .container {
+            div {
+                input {
+                    width: 300px;
+                }
+            }
+        }
+    }
     
 }
 
@@ -230,5 +577,38 @@ a {
             }
         }
     }
-    
+    .packages {
+        .container {
+            .teacher_instruction {
+                flex-direction: column;
+                .teacher {
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+                .instruction {
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                }
+            }
+        }
+    }
+    .email {
+        .container {
+            div {
+                input {
+                    width: 150px;
+                }
+            }
+        }
+    }
+    .footer {
+        .container {
+            text-align: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
 }
