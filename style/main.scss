@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+$color_grey:#737373;
+$color_black:#252B42;
+$color_geen:#96BB7C;
+$bg_color:#FFF2F3;
+$color_red: #E74040;
+
+img {
+    max-width: 100%;
+}
+
+section {
+    width: 100%;
+
+}
+
+.container {
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color_grey;
+    font-weight: 700;
+    font-size: 14px;
+
+}
+.btn {
+    padding: 15px 25px;
+    color: white;
+    background-color: $color_geen;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.head_container {
+    background-color: $bg_color;
+    min-height: 100vh;
+    .container {
+        header {
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .header_left {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+                h1 {
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: $color_black;
+                }
+            }
+            .header_right {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                button {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    i {
+                        font-size: 14px;
+                        font-weight: 700;
+
+                    }
+                }
+            }
+
+        }
+        .header_about {
+            padding-top: 40px;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+            .head_txt {
+                flex: 1;
+                display: flex;
+                gap: 30px;
+                flex-direction: column;
+                h1 {
+                    font-size: 58px;
+                }
+                p {
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: $color_grey;
+                }
+                a {
+                    font-size: 16px;
+                }
+                .buttons {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                  .more_btn {
+                    padding: 15px 25px ;
+                    color: $color_geen;
+                    background-color: transparent;
+                    border: 1px solid $color_geen;
+                    border-radius: 5px;
+                    cursor: pointer;
+                  }  
+                }
+                .grean_anker {
+                color: $color_geen;
+                
+            }
+            }
+            
+            .head_img {
+                flex: 1;
+            }
+
+        }
+    }
+}
+.iconka {
+    display: none;
+    align-items: center;
+    gap: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    color: $color_geen;
+}
+
+.packages {
+    min-height: 70vh;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:830px) {
+    .head_container {
+        .container {
+            header {
+                .header_right {
+                display: none;
+                }
+                .header_left {
+                    ul {
+                        display: none;
+                    }
+
+                }
+               .iconka {
+                display: flex;
+               } 
+            }
+
+            .header_about {
+                .head_txt {
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                }
+                flex-direction: column;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .head_container {
+        .container {
+            .header_about {
+                .head_txt {
+                    h1 {
+                        font-size: 30px;
+                    }
+                    .buttons {
+                        button {
+                            font-size: 10px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
